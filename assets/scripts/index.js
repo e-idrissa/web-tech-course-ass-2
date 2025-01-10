@@ -26,4 +26,4 @@ document.getElementById("my-form").addEventListener("submit", function(e) {
   }
 
   if (!isValid) e.preventDefault()
-}())
+})

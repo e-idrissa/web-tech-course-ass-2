@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>TP2</title>
   </head>
   <body>
@@ -15,10 +15,7 @@
           type="text"
           name="nom"
           id="nom"
-          required
-          minlength="2"
-          pattern="[A-Za-z\s-]+"
-          title="Le nom ne doit contenir que des lettres et des tirets"
+          title="Le nom doit contenir uniquement des lettres, des tirets."
         />
       </div>
       <div class="item">
@@ -27,19 +24,16 @@
           type="text"
           name="prenom"
           id="prenom"
-          required
-          minlength="2"
-          pattern="[A-Za-z\s-]+"
-          title="Le prenom ne doit contenir que des lettres et des tirets"
+          title="Le prenom doit contenir uniquement des lettres, des tirets."
         />
       </div>
       <div class="item">
-        <label for="prenom">Email</label>
+        <label for="email">Email</label>
         <input
           type="email"
           name="email"
           id="email"
-          required
+          title="Veuillez entrer une adresse email valide."
         />
       </div>
       <div class="item">
@@ -48,13 +42,12 @@
           type="tel"
           name="telephone"
           id="telephone"
-          required
-          pattern="\d{10}"
-          title="Le prenom ne doit contenir exactement 10 chiffres"
+          pattern="^\d{10}$"
+          title="Le numero de telephone doit contenir exactement 10 chiffres."
         />
       </div>
-      <input type="submit" value="Soumettre">
+      <input type="submit" value="Soumettre" />
     </form>
-    <!-- <script src="assets/scripts/index.js"></script> -->
+    <script src="assets/scripts/index.js"></script>
   </body>
 </html>
