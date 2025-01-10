@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>TP2</title>
+  </head>
+  <body>
+    <h2>Formulaire pour TP2 Cours Web Technologies</h2>
+    <form id="my-form">
+      <div class="item">
+        <label for="nom">Nom</label>
+        <input
+          type="text"
+          name="nom"
+          id="nom"
+          required
+          minlength="2"
+          pattern="[A-Za-z\s-]+"
+          title="Le nom ne doit contenir que des lettres et des tirets"
+        />
+      </div>
+      <div class="item">
+        <label for="prenom">Prenom</label>
+        <input
+          type="text"
+          name="prenom"
+          id="prenom"
+          required
+          minlength="2"
+          pattern="[A-Za-z\s-]+"
+          title="Le prenom ne doit contenir que des lettres et des tirets"
+        />
+      </div>
+      <div class="item">
+        <label for="prenom">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+        />
+      </div>
+      <div class="item">
+        <label for="telephone">Telephone</label>
+        <input
+          type="tel"
+          name="telephone"
+          id="telephone"
+          required
+          pattern="\d{10}"
+          title="Le prenom ne doit contenir exactement 10 chiffres"
+        />
+      </div>
+      <input type="submit" value="Soumettre">
+    </form>
+    <!-- <script src="assets/scripts/index.js"></script> -->
+  </body>
+</html>
